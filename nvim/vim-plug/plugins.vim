@@ -37,13 +37,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'airblade/vim-rooter'
     Plug 'wakatime/vim-wakatime'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme dracula
 
-let g:airline_theme='gruvbox'
+let g:airline_theme='dracula'
 
 if (has("termguicolors"))
     set termguicolors
@@ -73,6 +74,10 @@ nmap <C-w> :bd<CR>
 
 " Fzf
 " This is the default extra key bindings
+
+nmap <leader>ff :Files<CR>
+nmap <leader>ll :Lines<CR>
+
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-x': 'split',
