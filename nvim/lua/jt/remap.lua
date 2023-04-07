@@ -5,7 +5,6 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 
-
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -21,3 +20,12 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Makes file +x
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+
+-- Define the mapping
+vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
+
+-- Explanation:
+-- 'insert' specifies that the mapping should work only in insert mode.
+-- 'jj' is the key sequence to trigger the mapping.
+-- '<Esc>' is the action to be performed, in this case, pressing the Escape key.
+-- { noremap = true } prevents any further mappings from being triggered by this mapping.

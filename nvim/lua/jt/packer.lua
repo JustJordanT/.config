@@ -47,9 +47,31 @@ return require('packer').startup(function(use)
   }
 }
 
- use { "ellisonleao/gruvbox.nvim" }
+ use { "ellisonleao/gruvbox.nvim"} -- next greatest remap ever : asbjornHaland}-- next greatest remap ever : asbjornHaland
  use {
   'nvim-lualine/lualine.nvim',
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-}
+};
+    use { "catppuccin/nvim", as = "catppuccin" }
+    use('fatih/vim-go', {run = ':GoUpdateBinaries'})
+    -- auto commented lines
+    use({
+        "winston0410/commented.nvim",
+        config = function()
+            require("commented").setup({
+                codetags_keybindings = {
+                    --  FIXME fixme = "<leader>f",
+                    --  FIXME fixme_line = "<leader>ff",
+                    todo = "<leader>t",
+                    --  todo_line = "<leader>tt",
+                    --  BUG bug = "<leader>b",
+                    --  BUG bug_line = "<leader>bb",
+                    --  note = "<leader>n",
+                    --  note_line = "<leader>nn",
+                    --  wont_fix = "<leader>w",
+                    --  wont_fix_line = "<leader>ww",
+                },
+            })
+        end,
+    })
   end)

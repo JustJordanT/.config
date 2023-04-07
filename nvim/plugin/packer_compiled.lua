@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  catppuccin = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -103,6 +108,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["commented.nvim"] = {
+    config = { "\27LJ\2\nš\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\25codetags_keybindings\1\0\0\1\0\n\rwont_fix\14<leader>w\bbug\14<leader>b\18wont_fix_line\15<leader>ww\14todo_line\15<leader>tt\ttodo\14<leader>t\14note_line\15<leader>nn\15fixme_line\15<leader>ff\tnote\14<leader>n\nfixme\14<leader>f\rbug_line\15<leader>bb\nsetup\14commented\frequire\0" },
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/commented.nvim",
+    url = "https://github.com/winston0410/commented.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
@@ -194,10 +205,19 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: commented.nvim
+time([[Config for commented.nvim]], true)
+try_loadstring("\27LJ\2\nš\2\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\25codetags_keybindings\1\0\0\1\0\n\rwont_fix\14<leader>w\bbug\14<leader>b\18wont_fix_line\15<leader>ww\14todo_line\15<leader>tt\ttodo\14<leader>t\14note_line\15<leader>nn\15fixme_line\15<leader>ff\tnote\14<leader>n\nfixme\14<leader>f\rbug_line\15<leader>bb\nsetup\14commented\frequire\0", "config", "commented.nvim")
+time([[Config for commented.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
