@@ -1,0 +1,65 @@
+set tabstop=4 softtabstop=4
+set exrc
+set guicursor=
+set relativenumber
+set nu
+set nohlsearch
+set hidden
+set noerrorbells
+set nowrap
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+"set incsearch
+set scrolloff=8
+set colorcolumn=80
+set signcolumn=yes
+
+" Vim Plugs
+"
+call plug#begin()
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'morhetz/gruvbox'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'neovim/nvim-lspconfig'
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'christoomey/vim-tmux-navigator'
+
+"Go Plugs
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'sebdah/vim-delve'
+
+"C#
+Plug 'OmniSharp/omnisharp-vim'
+
+
+
+call plug#end()
+
+colorscheme gruvbox
+
+let mapleader =  ' '
+
+nmap <leader>ff :Files<CR>
+nmap <leader>ll :Lines<CR>
+
+nnoremap <leader>ps :lue require('telescope.builtin').grep_string({ search = vim.fn.input("Grep for > ")})<C
+
+"Get Files
+command! -bang -nargs=? -complete=dir Files
+		\ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
+
+" Go config
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+
+nmap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
+
+"Tmux bindings
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
