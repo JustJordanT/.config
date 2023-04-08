@@ -46,12 +46,12 @@ return require('packer').startup(function(use)
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
 }
-
- use { "ellisonleao/gruvbox.nvim"} -- next greatest remap ever : asbjornHaland}-- next greatest remap ever : asbjornHaland
- use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-};
+     use {"nvim-tree/nvim-web-devicons"}
+     use { "ellisonleao/gruvbox.nvim"} -- next greatest remap ever : asbjornHaland}-- next greatest remap ever : asbjornHaland
+     use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    };
     use { "catppuccin/nvim", as = "catppuccin" }
     use('fatih/vim-go', {run = ':GoUpdateBinaries'})
     -- auto commented lines
@@ -74,4 +74,17 @@ return require('packer').startup(function(use)
             })
         end,
     })
+    -- https://github.com/glepnir/dashboard-nvim
+    use {
+      'glepnir/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+        require('dashboard').setup {
+          -- config
+        }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+    }
+    -- Issues hotkeys with barbar 4/8/23 icons.button = "false" not working
+    --  use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
   end)
