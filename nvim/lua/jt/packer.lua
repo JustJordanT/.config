@@ -85,6 +85,15 @@ return require('packer').startup(function(use)
       end,
       requires = {'nvim-tree/nvim-web-devicons'}
     }
+    -- https://github.com/SmiteshP/nvim-navbuddy
+        use {
+        "SmiteshP/nvim-navbuddy",
+        requires = {
+            "neovim/nvim-lspconfig",
+            "SmiteshP/nvim-navic",
+            "MunifTanjim/nui.nvim"
+        }
+    }
     -- Issues hotkeys with barbar 4/8/23 icons.button = "false" not working
     --  use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim
   end)
