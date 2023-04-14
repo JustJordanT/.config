@@ -13,16 +13,16 @@ success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set
 disabled = true
 
 [lua]
-format = 'via [🌕 $version](bold blue) '
+format = 'via [󰢱 $version](bold blue) '
 
 [golang]
-format = 'via [Go  $version](bold cyan) '
+format = 'via [󰟓 $version](bold cyan) '
 
 [pulumi]
 format = '[🛥 ($version )$stack]($style) '
 
 [rust]
-format = 'via [⚙️ $version](red bold)'
+format = 'via [ $version](red bold)'
 
 #  [shell]
 #  zsh_indicator = ''
@@ -35,17 +35,18 @@ symbol = '👩‍💻 '
 disabled = false
 
 [terraform]
-format = '[🏎💨 $version$workspace]($style) '
+format = '[🌎 $version$workspace]($style) '
 
 [git_status]
-conflicted = '😧'
-ahead = '﹥'
-behind = '≯'
-diverged = '😵'
-up_to_date = '✓'
-untracked = '❌'
+conflicted = '😧 '
+ahead = '﹥ '
+behind = '≯ '
+diverged = '😵 '
+up_to_date = '🟢 '
+untracked = '🔴 '
 stashed = '📦'
-modified = '📝'
+modified = ' '
 staged = '[++\($count\)](green)'
-renamed = '🪢'
 deleted = '🗑'
+
+

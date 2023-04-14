@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   catppuccin = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -127,6 +132,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gopher.nvim"] = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/gopher.nvim",
+    url = "https://github.com/olexsmir/gopher.nvim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,

@@ -14,8 +14,8 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set('n', '<C-s>', ":tabnext<CR>", { noremap  = true})
-vim.keymap.set("n", '<C-a>', ":tabprevious<CR>", { noremap = true })
+vim.keymap.set('n', '<C-a>', ":BufferLinePick<CR>", { noremap  = true})
+--  vim.keymap.set("n", '<C-a>', ":BufferLineCyclePrev<CR>", { noremap = true })
 vim.keymap.set("n", '<C-d>', ":tabclose<CR>", { noremap = true })
 
 -- greatest remap ever

@@ -74,6 +74,17 @@ return require('packer').startup(function(use)
             })
         end,
     })
+    -- GO CONFIGURATION
+    use {
+      "olexsmir/gopher.nvim",
+      requires = { -- dependencies
+        "nvim-lua/plenary.nvim",
+        "nvim-treesitter/nvim-treesitter",
+      },
+    }
+    -- TABLINE 
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
     -- https://github.com/glepnir/dashboard-nvim
     use {
       'glepnir/dashboard-nvim',
