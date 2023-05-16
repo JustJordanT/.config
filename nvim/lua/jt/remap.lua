@@ -11,12 +11,13 @@ end
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- shift block of code
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set('n', '<C-a>', ":BufferLinePick<CR>", { noremap  = true})
---  vim.keymap.set("n", '<C-a>', ":BufferLineCyclePrev<CR>", { noremap = true })
-vim.keymap.set("n", '<C-d>', ":tabclose<CR>", { noremap = true })
+vim.keymap.set('n', '<C-s>', ":BufferLineCycleNext<CR>", { noremap  = true})
+vim.keymap.set("n", '<C-a>', ":BufferLineCyclePrev<CR>", { noremap = true })
+vim.keymap.set("n", '<C-q>', ":BufferLinePickClose<CR>", { noremap = true })
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -26,7 +27,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-
+-- rename
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 
@@ -42,3 +43,8 @@ vim.api.nvim_set_keymap('i', 'jj', '<Esc>', { noremap = true })
 -- 'jj' is the key sequence to trigger the mapping.
 -- '<Esc>' is the action to be performed, in this case, pressing the Escape key.
 -- { noremap = true } prevents any further mappings from being triggered by this mapping.
+
+-- Golang Mappers
+vim.api.nvim_set_keymap('n', 'ff', ':GoFmt<CR>', {noremap=true})
+
+

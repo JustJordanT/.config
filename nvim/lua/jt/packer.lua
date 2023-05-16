@@ -82,6 +82,11 @@ return require('packer').startup(function(use)
         "nvim-treesitter/nvim-treesitter",
       },
     }
+    -- https://github.com/crusj/structrue-go.nvim
+    use {
+        'crusj/structrue-go.nvim',
+        branch = "main"
+    }
     -- TABLINE 
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
@@ -97,13 +102,30 @@ return require('packer').startup(function(use)
       requires = {'nvim-tree/nvim-web-devicons'}
     }
     -- https://github.com/SmiteshP/nvim-navbuddy
-        use {
-        "SmiteshP/nvim-navbuddy",
-        requires = {
-            "neovim/nvim-lspconfig",
-            "SmiteshP/nvim-navic",
-            "MunifTanjim/nui.nvim"
+        --  use {
+        --  "SmiteshP/nvim-navbuddy",
+        --  requires = {
+    --  require"structrue-go".setup()
+            --  "neovim/nvim-lspconfig",
+            --  "SmiteshP/nvim-navic",
+            --  "MunifTanjim/nui.nvim"
+        --  }
+    --  }
+    -- diagnostics
+    -- https://github.com/ray-x/lsp_signature.nvim
+    use {
+      "ray-x/lsp_signature.nvim",
+    }
+    use {
+      "folke/trouble.nvim",
+      requires = "nvim-tree/nvim-web-devicons",
+      config = function()
+        require("trouble").setup {
+          -- your configuration comes here
+          -- or leave it empty to use the default settings
+          -- refer to the configuration section below
         }
+      end
     }
     -- Issues hotkeys with barbar 4/8/23 icons.button = "false" not working
     --  use { "romgrk/barbar.nvim", wants = "nvim-tree/nvim-web-devicons" } -- https://github.com/romgrk/barbar.nvim

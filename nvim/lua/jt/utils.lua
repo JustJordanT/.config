@@ -24,3 +24,10 @@ vim.loop.timer_start(timer, 60000, 60000, vim.schedule_wrap(save_file))
 -- TABLINE CONFIG
 vim.opt.termguicolors = true
 require("bufferline").setup{}
+
+-- GO STRUCT
+--  require"structrue-go".setup()
+
+-- diagnostics
+--  local cfg = {…}  -- add your config here
+require "lsp_signature".setup(cfg)

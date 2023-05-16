@@ -153,6 +153,11 @@ _G.packer_plugins = {
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -223,10 +228,21 @@ _G.packer_plugins = {
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["structrue-go.nvim"] = {
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/structrue-go.nvim",
+    url = "https://github.com/crusj/structrue-go.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/Users/jordantaylor/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
@@ -246,6 +262,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 -- Config for: commented.nvim
 time([[Config for commented.nvim]], true)
 try_loadstring("\27LJ\2\nm\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\25codetags_keybindings\1\0\0\1\0\1\ttodo\14<leader>t\nsetup\14commented\frequire\0", "config", "commented.nvim")
