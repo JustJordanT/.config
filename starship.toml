@@ -14,14 +14,12 @@ disabled = true
 
 [aws]
 format = 'on [$symbol($profile )(\($region\) )]($style)'
-style = 'bold blue'
-symbol = '🅰 '
-disabled = true
-[aws.region_aliases]
-ap-southeast-2 = 'au'
-us-east-1 = 'va'
-[aws.profile_aliases]
-CompanyGroupFrobozzOnCallAccess = 'Frobozz'
+style = 'bold orange'
+symbol = '󰸏 '
+
+[docker_context]
+symbol = ' 󰡨 ' 
+
 
 [lua]
 format = 'via [󰢱 $version](bold blue) '
@@ -33,7 +31,6 @@ format = 'via [󰟓 $version](bold cyan) '
 #  format = '[🛥 ($version )$stack]($style) '
 
 [dotnet]
-disabled = true
 
 [rust]
 format = 'via [ $version](red bold)'
@@ -49,19 +46,19 @@ symbol = '👩‍💻 '
 disabled = false
 
 [terraform]
-format = '[🌎 $version$workspace]($style) '
+format = '[󱁢 $version$workspace]($style) '
 
 [git_status]
 #  conflicted = '😧 '
 #  ahead = '﹥ '
 #  behind = '≯ '
 #  diverged = '😵 '
-up_to_date = '🟢 '
-untracked = '🔴 '
-#  stashed = '📦 '
+up_to_date = '  '
+untracked = '  '
+stashed = ' 📦 '
 #  modified = ' '
 staged = '[++\($count\)](green)'
-#  deleted = '🗑 '
+deleted = '[--\($count\)](reg)'
 
 [git_metrics]
 added_style = 'bold blue'
