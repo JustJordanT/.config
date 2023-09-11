@@ -1,0 +1,37 @@
+theme = "mellow"
+
+[editor]
+line-number = "relative"
+mouse = false
+middle-click-paste = true
+bufferline = "multiple"
+auto-save	 = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+enable = true
+display-messages = true
+
+[editor.soft-wrap]
+enable = true
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+C-m = ["move_line_up", "scroll_up"]
+C-n = ["move_line_down", "scroll_down"]
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+
+[keys.select]
+"C-;" = "search_next"
+"C-:" = "search_prev"
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode

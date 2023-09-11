@@ -46,16 +46,16 @@ symbol = '👩‍💻 '
 disabled = false
 
 [terraform]
-format = '[󱁢 $version$workspace]($style) '
+format = '[󱁢 $version]($style) '
 
 [git_status]
 #  conflicted = '😧 '
 #  ahead = '﹥ '
 #  behind = '≯ '
 #  diverged = '😵 '
-up_to_date = '  '
+up_to_date = '  '
 untracked = '  '
-stashed = ' 📦 '
+# stashed = ' 📦 '
 #  modified = ' '
 staged = '[++\($count\)](green)'
 deleted = '[--\($count\)](reg)'
