@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "create-astro": "^4.2.1",
     "create-next-app": "^13.4.4"
   }
 }

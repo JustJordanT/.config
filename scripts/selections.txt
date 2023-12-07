@@ -1,0 +1,16 @@
+aws-login
+aws-dev
+aws-prod
+aws-audit
+aws-management
+aws-logging
+k8s-ctx-dev-us-east
+k8s-ctx-dev-us-west
+k8s-ctx-prod-us-east
+k8s-ctx-prod-us-west
+k8s-ctx-dev-eu-west
+k8s-ctx-dev-eu-central
+k8s-ctx-prod-eu-west
+k8s-ctx-prod-eu-central
+aws-shared
+aws-sandbox
