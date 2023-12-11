@@ -5,7 +5,7 @@ github-copilot
 menu.sh
 xbuild
 Microsoft\VisualStudio Services 
-raycast/
+raycast/*
 asciinema
 fish                            
 yarn
