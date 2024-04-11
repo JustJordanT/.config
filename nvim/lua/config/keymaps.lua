@@ -25,7 +25,7 @@ vim.keymap.set("n", "<leader>d", "yyp")
 vim.keymap.set("n", "<leader>c", ":CommentToggle<CR>")
 
 -- Close current bufferline
-vim.keymap.set("n", "<leader>q", ":BufferLinePickClose<CR>")
+vim.keymap.set("n", "<leader>q", ":bd<CR>")
 
 -- Selec all
 vim.keymap.set("n", "<leader>a", "ggVG")
@@ -38,7 +38,7 @@ keymap.set("n", "ss", ":split<CR>", opts)
 keymap.set("n", "sv", ":vsplit<CR>", opts)
 
 -- Close window
-keymap.set("n", "qq", ":close<CR>", opts)
+keymap.set("n", "qq", ":BufferLinePickClose<CR>", opts)
 
 -- Oil Keymaps
 vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })

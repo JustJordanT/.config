@@ -65,10 +65,10 @@ create-astro@^4.2.1:
     "@astrojs/cli-kit" "^0.3.0"
     giget "1.1.2"
 
-create-next-app@^13.4.4:
-  version "13.4.4"
-  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-13.4.4.tgz#2a49e0d92e8d78f1f6d4c2b1409329dc9a9f9b76"
-  integrity sha512-jRAR62cFctRXxuRjhURGFxUMv/qcW1rSgshrurn6/5AWxOFGzLeaCsNhuwQWLbT5T0mCecR5LMUVH9QduW33Qw==
+create-next-app@^14.1.4:
+  version "14.1.4"
+  resolved "https://registry.yarnpkg.com/create-next-app/-/create-next-app-14.1.4.tgz#85a1ffd16528f6661ce7a166984a513da57667b5"
+  integrity sha512-2yA3CmLxlS/g4jhashg5mMdyIwCw7xuutYnh80nDEHUGoQk5IM1CQAg3fXSkpzIfPDrvTn1gebFj7InQqrrbRA==
 
 debug@4:
   version "4.3.4"
